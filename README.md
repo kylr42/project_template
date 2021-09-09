@@ -12,11 +12,13 @@ Uses the default Django development server.
     $ docker-compose up -d --build
     ```
 Test it out at [http://localhost:8000](http://localhost:8000). The ```"app"``` folder is mounted into the container and your code changes apply automatically.
+<br><br>
 
->Get the following error? 
->>django.db.utils.OperationalError: FATAL:  database ```"postgres"``` does not exist
+Get the following error? 
+>django.db.utils.OperationalError: FATAL:  database ```"postgres"``` does not exist
 
-Run ```docker-compose down -v``` to remove the volumes along with the containers. Then, re-build the images, run the containers, and apply the migrations.
+Run ```docker-compose down -v``` to remove the volumes along with the containers. Then, re-build the images and run the containers.
+<br><br>
 
 ### Production
 
